@@ -8,14 +8,14 @@
 
 # Introduction to OS
 
-![image-20220523165746110](image-20220523165746110.png)  
+![image-20220523165746110](./assets/image-20220523165746110.png)  
 
 - An OS is a program that manages the computer hardware.
 - It also provides a basis for Application Programs, and acts as an ==intermediary between computer user and computer hardware.==
 
  
 
-![image-20220523165756133](image-20220523165756133.png) 
+![image-20220523165756133](./assets/image-20220523165756133.png) 
 
 - This diagram represents the basic structure and basic components of a computer system.
 - At the lowest level, we have the **computer hardware**.
@@ -39,7 +39,7 @@
 
 
 
-![image-20220523165808997](image-20220523165808997.png) 
+![image-20220523165808997](./assets/image-20220523165808997.png) 
 
 
 
@@ -53,7 +53,7 @@
 
 # Computer System Operation
 
-![image-20220523180153401](image-20220523180153401.png) 
+![image-20220523180153401](./assets/image-20220523180153401.png) 
 
 - A modern general-purpose computer system consists of one or more CPUs. 
 - And a number of device controllers connected through a common bus that provides access to shared memory.
@@ -102,11 +102,11 @@
 
 # Storage Structure
 
-![image-20220522211003273](image-20220522211003273.png) 
+![image-20220522211003273](./assets/image-20220522211003273.png) 
 
 (Wiley Operating System 10th 13p.)
 
-![image-20220522205822948](image-20220522205822948.png)
+![image-20220522205822948](./assets/image-20220522205822948.png)
 
 - Main Memory is a **Random Access Memory**(RAM)
 - Electronic disk, magnetic disk, optical disk, magnetic tapes are a **secondary memory**.
@@ -124,7 +124,7 @@
 - ==A Large portion of operating system code is dedicated to managing I/O==, because it is important to the reliability and performance of a system, and there are various devices.
 - A general-purpose computer system consists of CPUs and multiple device controllers that are connected ==through a common bus== that provides access to shared memory.
 
-- ![image-20220523180153401](image-20220523180153401.png) 
+- ![image-20220523180153401](./assets/image-20220523180153401.png) 
 - Each **device controller** is in charge of a specific type of device.
   - A device controller maintains a local buffer storage and a set of special purpose registers.
 - Typically, operating systems have ==a **device driver** for each **device controller**.==
@@ -138,7 +138,7 @@
 
 ## Working of an I/O Operation
 
-![image-20220523192543549](image-20220523192543549.png) 
+![image-20220523192543549](./assets/image-20220523192543549.png) 
 
 - ==To start an I/O operation, the device driver loads **the appropriate registers** within the device controller.==
 - The device controller, in turn, examines the contents of these registers to determine what action to take.
@@ -157,7 +157,7 @@
 
 # Computer System Architecture
 
-![image-20220523100635119](image-20220523100635119.png) 
+![image-20220523100635119](./assets/image-20220523100635119.png) 
 
 ### 1. Single Processor System
 
@@ -192,7 +192,7 @@
 ### 3. Types of Multiprocessor Systems
 
 - **Symmetric Multiprocessing**
-  - ![image-20220523112250193](image-20220523112250193.png) 
+  - ![image-20220523112250193](./assets/image-20220523112250193.png) 
   - All these CPUs and processors are actually the same.
   - They are similar to each other.
   - And they all participate in performing processes P1, P2, and P3 (task).
@@ -201,7 +201,7 @@
 
 
 - **Asymmetric Multiprocessing**
-  - ![image-20220523112521411](image-20220523112521411.png) 
+  - ![image-20220523112521411](./assets/image-20220523112521411.png) 
   - Master-Slave approach
   - One of the CPU and one of the processor will act as a **==master==**.
   - And there are ==**slave processors**==.
@@ -250,7 +250,7 @@
 
 
 
-![image-20220523121357273](image-20220523121357273.png) 
+![image-20220523121357273](./assets/image-20220523121357273.png) 
 
 - A job pool consists of all the jobs that entered the system.
 - So, all the jobs that have to be executed are kept in a job pool.
@@ -294,7 +294,7 @@
 
 - CPU executes multiple jobs by switching among them very frequently.
 - So the user can interact with the program while it is running.
-- ![image-20220523124212595](image-20220523124212595.png) 
+- ![image-20220523124212595](./assets/image-20220523124212595.png) 
 
 - The users themselves don't realize that they are sharing the system.
 - Because the switching between the jobs takes place so very quickly.
@@ -313,7 +313,7 @@
 
 ## 1. User Interface, UI
 
-![image-20220523125034107](image-20220523125034107.png) 
+![image-20220523125034107](./assets/image-20220523125034107.png) 
 
 - The user interface (UI) allows the user to interact with OS.
 - So almost all operating systems have a user interface.
@@ -324,7 +324,7 @@
 
 ## 2. Program Execution
 
-![image-20220523125546755](image-20220523125546755.png) 
+![image-20220523125546755](./assets/image-20220523125546755.png) 
 
 - The OS must provide for the execution of the programs.
 
@@ -334,7 +334,7 @@
 
 - Input Devices : Keyboard, Mouse ...
 
-- Output Devices : Monitor, Speaker ... ![image-20220523125837773](image-20220523125837773.png) 
+- Output Devices : Monitor, Speaker ... ![image-20220523125837773](./assets/image-20220523125837773.png) 
 
 - A running program that we have may require I/O, which may involves files or I/O devices.
 - And these I/O operations should be provided by the OS.
@@ -379,7 +379,7 @@
 
 ## 7. Resource Allocation
 
-![image-20220523133032903](image-20220523133032903.png) 
+![image-20220523133032903](./assets/image-20220523133032903.png) 
 
 - Resources can be of different types. It may be the CPU, it may be the file, it may be the I/O devices,  it may be the main memory and so on.
 
@@ -557,7 +557,7 @@ System calls can be grouped roughtly into five major categories :
 
 # System Programs
 
-![image-20220523163035911](image-20220523163035911.png) 
+![image-20220523163035911](./assets/image-20220523163035911.png) 
 
 - System programs provide a convenient environment for program development and execution.
 - Some of them are simply user interfaces to system calls.
@@ -629,11 +629,11 @@ System calls can be grouped roughtly into five major categories :
   - To send electronic-mail messages
   - To log in remotely or to transfer files from one machine to another.
 
-![image-20220523163929341](image-20220523163929341.png) 
+![image-20220523163929341](./assets/image-20220523163929341.png) 
 
 
 
-![image-20220523163937893](image-20220523163937893.png) 
+![image-20220523163937893](./assets/image-20220523163937893.png) 
 
 
 
@@ -656,21 +656,21 @@ System calls can be grouped roughtly into five major categories :
   - User Goals
   - System Goals
 
-![image-20220523164244660](image-20220523164244660.png) 
+![image-20220523164244660](./assets/image-20220523164244660.png) 
 
 
 
-![image-20220523164447482](image-20220523164447482.png)
+![image-20220523164447482](./assets/image-20220523164447482.png)
 
 
 
-![image-20220523164453580](image-20220523164453580.png)
+![image-20220523164453580](./assets/image-20220523164453580.png)
 
 
 
 
 
-![image-20220523164502145](image-20220523164502145.png)
+![image-20220523164502145](./assets/image-20220523164502145.png)
 
 
 
@@ -680,27 +680,13 @@ System calls can be grouped roughtly into five major categories :
 
 # Structures of OS
 
-![image-20220523164533922](image-20220523164533922.png) 
+![image-20220523164533922](./assets/image-20220523164533922.png) 
 
 
 
 
 
-![image-20220523164543508](image-20220523164543508.png)
-
-
-
-
-
-
-
-![image-20220523164556858](image-20220523164556858.png)
-
-
-
-
-
-![image-20220523164607635](image-20220523164607635.png)  
+![image-20220523164543508](./assets/image-20220523164543508.png)
 
 
 
@@ -708,7 +694,21 @@ System calls can be grouped roughtly into five major categories :
 
 
 
-![image-20220523164621372](image-20220523164621372.png)
+![image-20220523164556858](./assets/image-20220523164556858.png)
+
+
+
+
+
+![image-20220523164607635](./assets/image-20220523164607635.png)  
+
+
+
+
+
+
+
+![image-20220523164621372](./assets/image-20220523164621372.png)
 
 
 
@@ -722,7 +722,7 @@ System calls can be grouped roughtly into five major categories :
 
 The fundamental idea behind a virtual machine is to abstract the hardware of a single computer (the CPU, memory, disk drives, network interface cards, and so forth) into several different execution environments, thereby creating the illusion that each separate execution environment is running its own private computer.
 
-![image-20220523164909368](image-20220523164909368.png) 
+![image-20220523164909368](./assets/image-20220523164909368.png) 
 
 
 
@@ -741,7 +741,7 @@ The fundamental idea behind a virtual machine is to abstract the hardware of a s
 
 # OS Generation & System Boot
 
-![image-20220523165331217](image-20220523165331217.png) 
+![image-20220523165331217](./assets/image-20220523165331217.png) 
 
 
 
@@ -749,7 +749,7 @@ The fundamental idea behind a virtual machine is to abstract the hardware of a s
 
 
 
-![image-20220523165351277](image-20220523165351277.png) 
+![image-20220523165351277](./assets/image-20220523165351277.png) 
 
 
 
